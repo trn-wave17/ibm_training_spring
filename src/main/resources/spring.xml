@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    	xmlns:context="http://www.springframework.org/schema/context"
+     	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+	
+	<context:annotation-config/>
+	<context:component-scan base-package="com.ibm.training.spring"></context:component-scan>
+	<!-- <bean id="phone" class="com.ibm.training.spring.mobile.phone.impl.Apple">
+		<constructor-arg index="0" value="Iphone12"></constructor-arg>
+		<constructor-arg index="1" ref="dimensions"></constructor-arg>
+		<constructor-arg index="2" ref="processor"></constructor-arg>
+	</bean>
+	
+	<bean id="dimensions" class="com.ibm.training.spring.mobile.phone.dimension.Dimension">
+		<constructor-arg index="0" value="6.5"></constructor-arg>
+		<constructor-arg index="1" value="3.4"></constructor-arg>
+		<constructor-arg index="2" value="1.2"></constructor-arg>
+	</bean>  
+	
+	<bean id="processor" class="com.ibm.training.spring.mobile.phone.processor.impl.A13" autowire="byType">
+		<property name="memoryUnit" ref="memoryUnit"></property>
+	 </bean> 
+	
+	<bean id="memoryUnit1" init-method="init" destroy-method="destroy" class="com.ibm.training.spring.mobile.phone.processor.memory.unit.impl.NxpMMU">
+		<property name="RAMSize" value="4"></property>
+		<property name="totalMemory" value="32"></property> 
+	</bean> -->
+</beans>
